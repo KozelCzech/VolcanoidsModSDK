@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: SulfurPowder
   m_EditorClassIdentifier: 
   m_assetId:
-    Value0: 1814451793
-    Value1: 1305834606
-    Value2: 421890238
-    Value3: 4137838154
-  m_enabled: 1
+    Value0: 813768905
+    Value1: 1326666603
+    Value2: 864499385
+    Value3: 4089639913
   m_name:
     m_id: item.SulfurPowder.name
     m_text: Sulfur powder

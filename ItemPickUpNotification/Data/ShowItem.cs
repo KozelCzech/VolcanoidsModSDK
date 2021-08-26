@@ -11,7 +11,7 @@ public class ShowItem : MonoBehaviour
     private InventoryItem[] slot = EmptyArray<InventoryItem>.Value;
     //private Inventory m_items = new Inventory();
 
-    float usedSlotAmount, nextEmptySlot;
+    //float usedSlotAmount, nextEmptySlot;
 
     public Image itemSprite;
     public Text itemName;
@@ -24,45 +24,45 @@ public class ShowItem : MonoBehaviour
     public float remainingTime;
     
     
-    void Start()
-    {
-        //usedSlotAmount = m_items.SlotCount;
-        //nextEmptySlot = m_items.SlotCount + 1;
-        ShowItemOnScreen();
-        itemSprite = null;
-        itemName = null;
-        //DepositLocation.DepositMined
-        remainingTime = time;
-    }
-    void Update()
-    {
-        //Amount of slots used changes
-        //if (usedSlotAmount != nextEmptySlot - 1)
-        //{
-        //    isShown = true;
+    //void Start()
+    //{
+    //    //usedSlotAmount = m_items.SlotCount;
+    //    //nextEmptySlot = m_items.SlotCount + 1;
+    //    ShowItemOnScreen();
+    //    itemSprite = null;
+    //    itemName = null;
+    //    //DepositLocation.DepositMined
+    //    remainingTime = time;
+    //}
+    //void Update()
+    //{
+    //    //Amount of slots used changes
+    //    //if (usedSlotAmount != nextEmptySlot - 1)
+    //    //{
+    //    //    isShown = true;
             
-        //}
+    //    //}
 
-        //if true displays item on screen
-        if(isShown)
-        {
-            this.gameObject.SetActive(true);
-            ShowItemOnScreen();
-            //timer until text on screen disappears
-            if (remainingTime > 0)
-            {
-                remainingTime = remainingTime - Time.deltaTime;
-            }
-            if(remainingTime == 0)
-            {
-                isShown = false;
-                remainingTime = time;
-                this.gameObject.SetActive(false);
-            }
-        }
+    //    //if true displays item on screen
+    //    if(isShown)
+    //    {
+    //        this.gameObject.SetActive(true);
+    //        ShowItemOnScreen();
+    //        //timer until text on screen disappears
+    //        if (remainingTime > 0)
+    //        {
+    //            remainingTime = remainingTime - Time.deltaTime;
+    //        }
+    //        if(remainingTime == 0)
+    //        {
+    //            isShown = false;
+    //            remainingTime = time;
+    //            this.gameObject.SetActive(false);
+    //        }
+    //    }
 
         
-    }
+    //}
     
     //gets item from inventory
     //private void GetItem(InventoryItem slot)
@@ -93,6 +93,7 @@ public class ShowItem : MonoBehaviour
         // Tohle se zavolá když hráč něco natěží
         isShown = true;
         item = minedItem;
+        Debug.Log("object mined");
 
     }
 
