@@ -55,14 +55,25 @@ public class ShowItem : MonoBehaviour
 
             foreach (var item in m_items)
             {
+
                 if (!m_previousItems.TryGetValue(item.Key, out int amount) || amount < item.Value)
                 {
-                    // This item was added
-                    itemInfo info;
-                    info.item = item.Key;
-                    info.amount = item.Value - amount;
-                    info.time = 3f;
-                    m_addedItems.Add(info);
+                    int index = m_addedItems.FindIndex(x => x.item == item.Key);
+                    if (index >= 0)
+                    {
+                        var info = m_addedItems[index];
+                        info.amount += item.Value - amount;
+                        m_addedItems[index] = info;
+                    }
+                    else
+                    {
+                        // This item was added
+                        itemInfo info;
+                        info.item = item.Key;
+                        info.amount = item.Value - amount;
+                        info.time = 3f;
+                        m_addedItems.Add(info);
+                    }
                 }
             }
             m_previousItems.Clear();
@@ -75,7 +86,7 @@ public class ShowItem : MonoBehaviour
         }
         return false;
     }
-    int amountOfItem = 0;
+    
     void Update()
     {
         //    //Amount of slots used changes
@@ -85,32 +96,28 @@ public class ShowItem : MonoBehaviour
 
         //    //}
 
-        TemplateCollection.Ensure(container, container.transform.GetChild(0).gameObject, slots);
+        
         
         
         if (UpdateItems())
         {
-            StartTimer();
-            
-            
+
+            int amountOfItem = 0;
+            TemplateCollection.Ensure(container, container.transform.GetChild(0).gameObject, m_addedItems.Count);
             foreach (var item in m_addedItems)
             {
-                if (amountOfItem == 5)
-                {
-                    amountOfItem = 0;
-                }
+                
                 var img = container.transform.GetChild(amountOfItem).GetComponentInChildren<Image>();
                 img.sprite = item.item.Icon;
                 var text = container.transform.GetChild(amountOfItem).GetComponentInChildren<TMPro.TMP_Text>();
                 text.text = item.item.Name + " x" + item.amount;
                 Debug.Log(item.item.Name + "     " + item.amount);
-                slots++;
+                
                 amountOfItem++;
-                
-                remainingTime = item.time;
-                
+                            
             }
-            slots = amountOfItem;
+            timerRunning = true;
+            remainingTime = 3f;
         }
         if(timerRunning)
         {
@@ -118,18 +125,18 @@ public class ShowItem : MonoBehaviour
             if (remainingTime > 0)
             {
                 remainingTime = remainingTime - Time.deltaTime;
-                Debug.Log(remainingTime);
+                //Debug.Log(remainingTime);
             }
             else
             {
-                Debug.Log("Timer ran out!");
+                Debug.Log("the Item Pick Up Notification Container dissabled");
                 //for(int i = -1; i < amountOfItem; i++)
                 //{
                 //    var itembox = container.transform.GetChild(i).gameObject;
                 //    itembox.SetActive(false);
                 //}
-                slots = 0;
-                amountOfItem = 0;
+
+                TemplateCollection.Ensure(container, container.transform.GetChild(0).gameObject, 0);
                 m_addedItems.Clear();
                 timerRunning = false;
             }
@@ -141,11 +148,7 @@ public class ShowItem : MonoBehaviour
 
 
     }
-    private void StartTimer()
-    {
-        timerRunning = true;
-        
-    }
+    
 
 
 //shows the sprite and name of item on screen
