@@ -28,7 +28,7 @@ public class ShowItem : MonoBehaviour
 
     
     public float remainingTime;
-    public int slots;
+    public int slots = 5;
 
     
 
@@ -61,7 +61,7 @@ public class ShowItem : MonoBehaviour
                     itemInfo info;
                     info.item = item.Key;
                     info.amount = item.Value - amount;
-                    info.time = 3f;
+                    info.time = 2f;
                     m_addedItems.Add(info);
                 }
             }
@@ -75,7 +75,7 @@ public class ShowItem : MonoBehaviour
         }
         return false;
     }
-    
+    int amountOfItem = 0;
     void Update()
     {
         //    //Amount of slots used changes
@@ -85,27 +85,29 @@ public class ShowItem : MonoBehaviour
 
         //    //}
 
-
-        int amountOfItem = 0;
+        TemplateCollection.Ensure(container, container.transform.GetChild(0).gameObject, slots);
+        
         
         if (UpdateItems())
         {
             StartTimer();
             
-            TemplateCollection.Ensure(container, container.transform.GetChild(0).gameObject, 5);
+            
             foreach (var item in m_addedItems)
             {
+                if (amountOfItem == 5)
+                {
+                    amountOfItem = 1;
+                }
                 var img = container.transform.GetChild(amountOfItem).GetComponentInChildren<Image>();
                 img.sprite = item.item.Icon;
                 var text = container.transform.GetChild(amountOfItem).GetComponentInChildren<TMPro.TMP_Text>();
                 text.text = item.item.Name + " x" + item.amount;
                 Debug.Log(item.item.Name + "     " + item.amount);
                 amountOfItem++;
+                slots++;
                 remainingTime = item.time;
-                if(amountOfItem == 5)
-                {
-                    amountOfItem = 0;
-                }
+                
             }
             //for(int i = -1; i < amountOfItem; i++)
             //{
@@ -119,7 +121,7 @@ public class ShowItem : MonoBehaviour
         if(timerRunning)
         {
             
-            if(remainingTime > 0)
+            if (remainingTime > 0)
             {
                 remainingTime = remainingTime - Time.deltaTime;
                 Debug.Log(remainingTime);
@@ -132,7 +134,8 @@ public class ShowItem : MonoBehaviour
                 //    var itembox = container.transform.GetChild(i).gameObject;
                 //    itembox.SetActive(false);
                 //}
-                
+                slots = 0;
+                amountOfItem = 0;
                 m_addedItems.Clear();
                 timerRunning = false;
             }
@@ -147,7 +150,7 @@ public class ShowItem : MonoBehaviour
     private void StartTimer()
     {
         timerRunning = true;
-
+        
     }
 
 
