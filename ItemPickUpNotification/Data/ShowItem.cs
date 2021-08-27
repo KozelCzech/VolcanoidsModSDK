@@ -61,7 +61,7 @@ public class ShowItem : MonoBehaviour
                     itemInfo info;
                     info.item = item.Key;
                     info.amount = item.Value - amount;
-                    info.time = 2f;
+                    info.time = 3f;
                     m_addedItems.Add(info);
                 }
             }
@@ -97,26 +97,20 @@ public class ShowItem : MonoBehaviour
             {
                 if (amountOfItem == 5)
                 {
-                    amountOfItem = 1;
+                    amountOfItem = 0;
                 }
                 var img = container.transform.GetChild(amountOfItem).GetComponentInChildren<Image>();
                 img.sprite = item.item.Icon;
                 var text = container.transform.GetChild(amountOfItem).GetComponentInChildren<TMPro.TMP_Text>();
                 text.text = item.item.Name + " x" + item.amount;
                 Debug.Log(item.item.Name + "     " + item.amount);
-                amountOfItem++;
                 slots++;
+                amountOfItem++;
+                
                 remainingTime = item.time;
                 
             }
-            //for(int i = -1; i < amountOfItem; i++)
-            //{
-            //    var img = container.transform.GetChild(i).GetComponentInChildren<Image>();
-            //    img.sprite = item.item.Icon;
-            //    var text = container.transform.GetChild(i).GetComponentInChildren<TMPro.TMP_Text>();
-            //    text.text = item.item.Name + " " + item.amount;
-            //}
-            
+            slots = amountOfItem;
         }
         if(timerRunning)
         {
