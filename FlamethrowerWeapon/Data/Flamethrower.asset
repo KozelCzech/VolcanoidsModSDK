@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74435e5a5d85c0448c6c0fb12d945d8, type: 3}
+  m_Name: Flamethrower
+  m_EditorClassIdentifier: 
+  m_assetId:
+    Value0: 2735538585
+    Value1: 1214740029
+    Value2: 1336868261
+    Value3: 2441218841
+  m_name:
+    m_id: item.Flamethrower.name
+    m_text: Flamethrower
+    m_comment: Item name - Flamethrower
+  m_description:
+    m_id: item.Flamethrower.description
+    m_text: "Burns enemies... and spiders. don't know what else you expected.\nHave
+      some puns: \n\tI just burned 81,500 calories\r\nNow to hide the remains and
+      the flamethrower\n\n\tIt takes a village to raise a child...\r\n...it takes
+      a child with a flamethrower to raze a village.\n\n\t\t\t\t\t\ti'm sorry."
+    m_comment: Item description - Flamethrower
+  Category: {fileID: 11400000, guid: 6f14ac7335e923a45a4fdd3b73c06b5d, type: 2}
+  Prefabs: []
+  Icon: {fileID: 21300000, guid: 45b122da2fcf70c46a834c37b88515be, type: 3}
+  MaxStack: 1
+  HelpPageId: 
+  Stats:
+    m_properties: []
+  GroupIndex: 1
+  GroupOrder: 0
+  Prefab: {fileID: 114318084756398594, guid: 14bded0634757b44aa9990ce32e9aead, type: 3}

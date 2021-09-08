@@ -4,14 +4,14 @@ using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Mods/ItemPickUpNotification")]
-public class SetParent : GameCallbackAsset
+public class SetParent : ModCallbackAsset
 {
     [SerializeField]
     GameObject m_myPrefab;
 
-    protected override void OnGameLoad()
+    public override void Init()
     {
-        base.OnGameLoad();
+        base.Init();
 
         var parent = UnityEngine.Object.FindObjectsOfType<HudCanvas>().FirstOrDefault(s => s.name == "ScaledUI");
         Instantiate(m_myPrefab, parent.transform);

@@ -27,16 +27,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce4e29b865b3fd47879e73172d49cd5, type: 3}
   m_Name: ItemPickUpNotification
   m_EditorClassIdentifier: 
-  WorkshopItemId: 0
+  WorkshopItemId: 2586306620
   DeployDir: KozelCzech.ItemPickUpNotification
-  UploadTimestamp: 0
+  UploadTimestamp: 1630392130074
   UniqueModId: KozelCzech.ItemPickUpNotification
   Title: ItemPickUpNotification
   Thumbnail: {fileID: 0}
   LoadGroup: 0
   LoadOrder: 0
-  Version: 1.0
-  ChangeNote: First version
+  Version: 1.4
+  ChangeNote: Changed GameCallbackAsset to ModCallbackAsset
   SkipContentPatches: 0
   DebugBuild: 0
   AssemblyDefinitions:
@@ -45,4 +45,6 @@ MonoBehaviour:
   OtherFiles: []
   Bundles:
   - {fileID: -4931876615100313578}
-  Metadata: []
+  Metadata:
+  - Key: 
+    Value: 

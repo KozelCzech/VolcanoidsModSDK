@@ -23612,7 +23612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114770502168787640, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
       propertyPath: m_items.m_slots.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114770502168787640, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
       propertyPath: m_items.m_slots.Array.data[0].Item
@@ -23635,6 +23635,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 02bd8b0bf0c7cf840a61f910289c882c, type: 2}
     - target: {fileID: 114770502168787640, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
+      propertyPath: m_items.m_slots.Array.data[5].Item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9910d03ad36776845adfeaf491b02819, type: 2}
+    - target: {fileID: 114770502168787640, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
+      propertyPath: m_items.m_slots.Array.data[6].Item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2d1cc9f1c0ca7fc40ad4cdaeff0ac822, type: 2}
+    - target: {fileID: 114770502168787640, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
       propertyPath: m_items.m_slots.Array.data[0].Amount
       value: 10
       objectReference: {fileID: 0}
@@ -23653,6 +23661,14 @@ PrefabInstance:
     - target: {fileID: 114770502168787640, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
       propertyPath: m_items.m_slots.Array.data[4].Amount
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770502168787640, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
+      propertyPath: m_items.m_slots.Array.data[5].Amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770502168787640, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
+      propertyPath: m_items.m_slots.Array.data[6].Amount
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 3043861020977260325, guid: 20217b00b2bb0b4498c996af1092a2f3, type: 3}
       propertyPath: m_textInfo.lineCount

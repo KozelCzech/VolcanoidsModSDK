@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce4e29b865b3fd47879e73172d49cd5, type: 3}
+  m_Name: FlamethrowerWeapon
+  m_EditorClassIdentifier: 
+  WorkshopItemId: 2592184768
+  DeployDir: Medoj.FlamethrowerWeapon
+  UploadTimestamp: 1630926593310
+  UniqueModId: Medoj.FlamethrowerWeapon
+  Title: FlamethrowerWeapon
+  Thumbnail: {fileID: 0}
+  LoadGroup: 0
+  LoadOrder: 0
+  Version: 1.3
+  ChangeNote: Added a new model, materials. Model is offset, will be fixed in the
+    next update
+  SkipContentPatches: 0
+  DebugBuild: 0
+  AssemblyDefinitions:
+  - {fileID: 5897886265953266890, guid: 7dd40c8ffffbc5b479010aa5badf1bba, type: 3}
+  Assemblies: []
+  OtherFiles: []
+  Bundles:
+  - {fileID: 1245131957931375790}
+  Metadata:
+  - Key: 
+    Value: 
+--- !u!114 &1245131957931375790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ead072c0a999348ba56b242372f0b8, type: 3}
+  m_Name: data
+  m_EditorClassIdentifier: 
+  AutoLoad: 1
+  Data:
+  - {fileID: 102900000, guid: a2ac2ff9bff2de94791ed0ecc0899454, type: 3}

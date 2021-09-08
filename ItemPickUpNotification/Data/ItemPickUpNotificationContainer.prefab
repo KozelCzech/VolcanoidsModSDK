@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8810175889978163988}
   - component: {fileID: 7213247916739545926}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ContainerOfContainers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5498885072736655038}
   - component: {fileID: 7805448732362952334}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ItemInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 4842246224096827165}
   - component: {fileID: 8576354091511696968}
   - component: {fileID: 8683319245316895340}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ItemSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8500571386546402165}
   - component: {fileID: 8359939217674565029}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ItemPickUpNotificationContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,8 +406,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a05174fb0c875e49ab348448e02c7e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 8576354091511696968}
-  itemName: {fileID: 0}
   container: {fileID: 1711302915997917159}
   timerRunning: 0
   remainingTime: 0

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad48868c50a58b43b6914a2b2a83097, type: 3}
+  m_Name: Flamethrower_Recipe
+  m_EditorClassIdentifier: 
+  m_assetId:
+    Value0: 4202835219
+    Value1: 1085291943
+    Value2: 2314805134
+    Value3: 143755520
+  Inputs:
+  - Item: {fileID: 11400000, guid: 8df9c647d90ecaa4e9539cdeb5e3683c, type: 2}
+    Amount: 3
+    Stats:
+      m_set:
+        m_properties: []
+  - Item: {fileID: 11400000, guid: ddf109b40b214a640967e3085841d22d, type: 2}
+    Amount: 1
+    Stats:
+      m_set:
+        m_properties: []
+  - Item: {fileID: 11400000, guid: ca8ecba733454c8439fdc1c068756eb2, type: 2}
+    Amount: 4
+    Stats:
+      m_set:
+        m_properties: []
+  - Item: {fileID: 11400000, guid: 156562c6e6475dd4eb885291a4662a6f, type: 2}
+    Amount: 5
+    Stats:
+      m_set:
+        m_properties: []
+  Output:
+    Item: {fileID: 11400000, guid: 9910d03ad36776845adfeaf491b02819, type: 2}
+    Amount: 1
+    Stats:
+      m_set:
+        m_properties: []
+  Icon: {fileID: 21300000, guid: 45b122da2fcf70c46a834c37b88515be, type: 3}
+  Order: 1
+  RequiredUpgrades: []
+  Categories:
+  - {fileID: 11400000, guid: 71518a2fb03bdef42b3c22fdf5e7a0c8, type: 2}
+  ProductionTime: 30
