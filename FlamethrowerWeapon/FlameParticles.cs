@@ -10,6 +10,8 @@ public class FlameParticles : MonoBehaviour
     public ParticleSystem flame;
 
     public AudioSource fireSound;
+
+    
     
     void Update()
     {
@@ -43,8 +45,6 @@ public class FlameParticles : MonoBehaviour
         
         
     }
-    //private void OnParticleCollision(GameObject other)
-    //{
-    //    if(other.gameObject.layer == )
-    //}
+
+    
 }

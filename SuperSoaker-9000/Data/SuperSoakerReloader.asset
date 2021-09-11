@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8b2fc4377adb2469b960596858679a, type: 3}
+  m_Name: SuperSoakerReloader
+  m_EditorClassIdentifier: 
+  m_assetId:
+    Value0: 1728107631
+    Value1: 1132525961
+    Value2: 3835300998
+    Value3: 309833398
+  AmmoCapacity: 100
+  ReloadTime: 3
+  Ammunition:
+  - {fileID: 11400000, guid: 080ca7c7c5ae4ea49a8b38fff4cc02c0, type: 2}
+  DisplayFormat: '{0} <size=72%>/ {1}</size>'

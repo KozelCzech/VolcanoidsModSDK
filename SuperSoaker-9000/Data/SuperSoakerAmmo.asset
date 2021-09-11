@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd8b9e1867cb794f952a84133fee008, type: 3}
+  m_Name: SuperSoakerAmmo
+  m_EditorClassIdentifier: 
+  m_assetId:
+    Value0: 2088419456
+    Value1: 1256516188
+    Value2: 4286822569
+    Value3: 203476047
+  m_name:
+    m_id: item.SuperSoakerAmmo.name
+    m_text: Super Soaker Ammo
+    m_comment: Item name - SuperSoakerAmmo
+  m_description:
+    m_id: item.RevolverAmmo.description
+    m_text: Water
+    m_comment: Item description - RevolverAmmo
+  Category: {fileID: 11400000, guid: 2e709134fa556f646a13d9c36077569b, type: 2}
+  Prefabs: []
+  Icon: {fileID: 21300000, guid: 98a5041b7c853f542bebfaebb3fbcbcd, type: 3}
+  MaxStack: 500
+  HelpPageId: '!Ammo#RevolverAmmo'
+  Stats:
+    m_properties: []
+  AmmoStats:
+    Item: {fileID: 0}
+    Damage: 0
+    DamageType: 18
+    Spread: 2
+    ProjectileCount: 1
+    ProjectilePrefab: {fileID: 3149312000111979785, guid: 22fe6d199e548c847b3232afaf0bad88, type: 3}
+    RateOfFire: 15
+    AiMinimumRange: 0
+    AiAccuracySpread:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    EffectiveRange: 2
+    Range: 2
+    DamageAtRangeMult: 0.2
+    MuzzleVelocity: 7.4
+    GravityFactor: 1.42
+    Noise: 10
+    HipAccuracy:
+      Cone: 3
+      ConeMoving: 4.5
+      ConeCrouch: 3
+      ConeCrouchMoving: 4.5
+      Bloom: 0.9
+      MaxConeAngle: 20
+    AimAccuracy:
+      Cone: 0.3
+      ConeMoving: 0.5
+      ConeCrouch: 0.3
+      ConeCrouchMoving: 0.5
+      Bloom: 0.5
+      MaxConeAngle: 10
+    Recoil:
+      Vertical: 1.8
+      HorizontalMinMax: {x: 0.18, y: 0.18}
+      HorizontalTolerance: 0
+      AngleMinMax: {x: 0, y: 0}
+      FirstShotMultiplier: 1
+      MinimumBurstLength: 0.5
+    HitEffect: {fileID: 0}

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1547716898401745591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ead072c0a999348ba56b242372f0b8, type: 3}
+  m_Name: data
+  m_EditorClassIdentifier: 
+  AutoLoad: 1
+  Data:
+  - {fileID: 102900000, guid: 864891715c5c6e74b92b39f47e23a91c, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce4e29b865b3fd47879e73172d49cd5, type: 3}
+  m_Name: SuperSoaker-9000
+  m_EditorClassIdentifier: 
+  WorkshopItemId: 0
+  DeployDir: 
+  UploadTimestamp: 0
+  UniqueModId: KozelCzech.SuperSoaker-9000
+  Title: SuperSoaker-9000
+  Thumbnail: {fileID: 0}
+  LoadGroup: 0
+  LoadOrder: 0
+  Version: 1.0
+  ChangeNote: First version
+  SkipContentPatches: 0
+  DebugBuild: 0
+  AssemblyDefinitions: []
+  Assemblies: []
+  OtherFiles: []
+  Bundles:
+  - {fileID: -1547716898401745591}
+  Metadata: []

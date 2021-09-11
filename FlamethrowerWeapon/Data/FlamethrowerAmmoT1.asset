@@ -36,8 +36,8 @@ MonoBehaviour:
     Item: {fileID: 0}
     Damage: 3
     DamageType: 19
-    Spread: 0
-    ProjectileCount: 10
+    Spread: 5
+    ProjectileCount: 5
     ProjectilePrefab: {fileID: 7973212129671658442, guid: ccf5f43415d69334d9fd532ca112888f, type: 3}
     RateOfFire: 14.9
     AiMinimumRange: 0
@@ -50,7 +50,7 @@ MonoBehaviour:
     EffectiveRange: 1.8
     Range: 1.8
     DamageAtRangeMult: 0.2
-    MuzzleVelocity: 130
+    MuzzleVelocity: 19.7
     GravityFactor: 0.7
     Noise: 10
     HipAccuracy:
