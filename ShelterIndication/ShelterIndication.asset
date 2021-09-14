@@ -10,30 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ce4e29b865b3fd47879e73172d49cd5, type: 3}
-  m_Name: FlamethrowerWeapon
+  m_Name: ShelterIndication
   m_EditorClassIdentifier: 
-  WorkshopItemId: 2592184768
-  DeployDir: Medoj.FlamethrowerWeapon
-  UploadTimestamp: 1631612094031
-  UniqueModId: Medoj.FlamethrowerWeapon
-  Title: FlamethrowerWeapon
+  WorkshopItemId: 0
+  DeployDir: 
+  UploadTimestamp: 0
+  UniqueModId: KozelCzech.ShelterIndication
+  Title: ShelterIndication
   Thumbnail: {fileID: 0}
   LoadGroup: 0
   LoadOrder: 0
-  Version: 1.3
-  ChangeNote: Added a new model, materials.
+  Version: 1.0
+  ChangeNote: First version
   SkipContentPatches: 0
   DebugBuild: 0
-  AssemblyDefinitions:
-  - {fileID: 5897886265953266890, guid: 7dd40c8ffffbc5b479010aa5badf1bba, type: 3}
+  AssemblyDefinitions: []
   Assemblies: []
   OtherFiles: []
   Bundles:
-  - {fileID: 1245131957931375790}
-  Metadata:
-  - Key: 
-    Value: 
---- !u!114 &1245131957931375790
+  - {fileID: 5253924274402534251}
+  Metadata: []
+--- !u!114 &5253924274402534251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,4 +44,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutoLoad: 1
   Data:
-  - {fileID: 102900000, guid: a2ac2ff9bff2de94791ed0ecc0899454, type: 3}
+  - {fileID: 102900000, guid: 485e0e0952a21ee4c84077179fd6e202, type: 3}
