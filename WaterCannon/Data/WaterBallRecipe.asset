@@ -10,34 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ad48868c50a58b43b6914a2b2a83097, type: 3}
-  m_Name: Flamethrower Ammo Recipe
+  m_Name: WaterBallRecipe
   m_EditorClassIdentifier: 
   m_assetId:
-    Value0: 1703304847
-    Value1: 1195912401
-    Value2: 3377707920
-    Value3: 1971948582
+    Value0: 1275508785
+    Value1: 1080129511
+    Value2: 668082101
+    Value3: 2475013409
   Inputs:
-  - Item: {fileID: 11400000, guid: 156562c6e6475dd4eb885291a4662a6f, type: 2}
-    Amount: 2
-    Stats:
-      m_set:
-        m_properties: []
   - Item: {fileID: 11400000, guid: d328101fb2c64b44fbb0e2748a64a037, type: 2}
-    Amount: 3
+    Amount: 5
     Stats:
       m_set:
         m_properties: []
   Output:
-    Item: {fileID: 11400000, guid: 2d1cc9f1c0ca7fc40ad4cdaeff0ac822, type: 2}
-    Amount: 150
+    Item: {fileID: 11400000, guid: 7855accd995756844ba684241707d2e8, type: 2}
+    Amount: 1
     Stats:
       m_set:
         m_properties: []
-  Icon: {fileID: 21300000, guid: 75ae0384d904dcd4e918fa2e39af260e, type: 3}
-  Order: 1
+  Icon: {fileID: 0}
+  Order: 0
   RequiredUpgrades: []
   Categories:
-  - {fileID: 11400000, guid: 996f87ed3f8002b46a0c432dd38f5be3, type: 2}
-  - {fileID: 11400000, guid: 5acdd6b437b97fc419656d27d9b088d3, type: 2}
+  - {fileID: 11400000, guid: 719da4d811005e845bfa02648f1e6fcb, type: 2}
   ProductionTime: 5

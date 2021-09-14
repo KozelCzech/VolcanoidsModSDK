@@ -10,34 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ad48868c50a58b43b6914a2b2a83097, type: 3}
-  m_Name: SuperSoakerRecipe
+  m_Name: WaterCannonRecipe
   m_EditorClassIdentifier: 
   m_assetId:
-    Value0: 1797153753
-    Value1: 1239871600
-    Value2: 1525547447
-    Value3: 2189020129
+    Value0: 3285041469
+    Value1: 1113376908
+    Value2: 2481244314
+    Value3: 3395877210
   Inputs:
+  - Item: {fileID: 11400000, guid: ca8ecba733454c8439fdc1c068756eb2, type: 2}
+    Amount: 2
+    Stats:
+      m_set:
+        m_properties: []
   - Item: {fileID: 11400000, guid: 8df9c647d90ecaa4e9539cdeb5e3683c, type: 2}
     Amount: 3
     Stats:
       m_set:
         m_properties: []
-  - Item: {fileID: 11400000, guid: ddf109b40b214a640967e3085841d22d, type: 2}
-    Amount: 2
-    Stats:
-      m_set:
-        m_properties: []
   Output:
-    Item: {fileID: 11400000, guid: 89cca7b6cdb8b994cb59a1eb74d9b5a2, type: 2}
+    Item: {fileID: 11400000, guid: a8b3f7221b5334c43a1f6c8fcc5b7124, type: 2}
     Amount: 1
     Stats:
       m_set:
         m_properties: []
-  Icon: {fileID: 21300000, guid: e82d5972341fc9e4ab5c2d86ea553c1c, type: 3}
+  Icon: {fileID: 0}
   Order: 0
   RequiredUpgrades: []
   Categories:
-  - {fileID: 11400000, guid: 996f87ed3f8002b46a0c432dd38f5be3, type: 2}
-  - {fileID: 11400000, guid: 71518a2fb03bdef42b3c22fdf5e7a0c8, type: 2}
+  - {fileID: 11400000, guid: 719da4d811005e845bfa02648f1e6fcb, type: 2}
   ProductionTime: 5

@@ -23,10 +23,7 @@ MonoBehaviour:
     m_comment: Item name - Flamethrower
   m_description:
     m_id: item.Flamethrower.description
-    m_text: "Burns enemies... and spiders. don't know what else you expected.\nHave
-      some puns: \n\tI just burned 81,500 calories\r\nNow to hide the remains and
-      the flamethrower\n\n\tIt takes a village to raise a child...\r\n...it takes
-      a child with a flamethrower to raze a village.\n\n\t\t\t\t\t\ti'm sorry."
+    m_text: Burns enemies... and spiders. don't know what else you expected.
     m_comment: Item description - Flamethrower
   Category: {fileID: 11400000, guid: 6f14ac7335e923a45a4fdd3b73c06b5d, type: 2}
   Prefabs: []

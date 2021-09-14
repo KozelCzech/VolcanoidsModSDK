@@ -9,10 +9,10 @@ public class water : MonoBehaviour
     public ParticleSystem waterP;
 
     public AudioSource waterSound;
-    public BoxCollider BoxCollider;
+    public CapsuleCollider capCollider;
 
     private GameObject hitCog;
-    private Ragdoll ragdoll;
+    private RagdollBlender ragdoll;
 
     void Update()
     {
@@ -47,27 +47,44 @@ public class water : MonoBehaviour
 
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnParticleCollision(GameObject other)
     {
-        if (weapon.IsFiring)
+        if (weapon.IsFiring && capCollider != null)
         {
-            if (other.gameObject.tag == "Exposed")
+            if (other.tag == "Exposed")
             {
                 Debug.Log(other + " THE COG WAS HIT");
-                hitCog = other.gameObject;
-                if(hitCog != null)
+                hitCog = other;
+                if (hitCog != null)
                 {
-                    ragdoll = hitCog.GetComponent<Ragdoll>();
-                    foreach (var element in ragdoll.Elements)
+                    ragdoll = hitCog.GetComponent<RagdollBlender>();
+                    if (ragdoll != null)
                     {
-                        if (element != null && element.Joint != null)
-                        {
-                            ragdoll.BreakJoint(element.Joint);
-                        }
+                        ragdoll.StartStagger();
                     }
                 }
                 hitCog = null;
             }
         }
     }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (weapon.IsFiring && capCollider != null)
+    //    {
+    //        if (other.gameObject.tag == "Exposed")
+    //        {
+    //            Debug.Log(other + " THE COG WAS HIT");
+    //            hitCog = other.gameObject;
+    //            if(hitCog != null)
+    //            {
+    //                ragdoll = hitCog.GetComponent<RagdollBlender>();
+    //                if(ragdoll != null)
+    //                {
+    //                    ragdoll.StartStagger();
+    //                }
+    //            }
+    //            hitCog = null;
+    //        }
+    //    }
+    //}
 }

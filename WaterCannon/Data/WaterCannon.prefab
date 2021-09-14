@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 4558359321154985151}
   - component: {fileID: 968860396025038021}
   m_Layer: 0
-  m_Name: Mortar
+  m_Name: WaterCannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd4c0c1c5092b0448a71f0b5d3338f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_item: {fileID: 11400000, guid: da137d36a12c54e46b3a132180b98bb1, type: 2}
+  m_item: {fileID: 11400000, guid: a8b3f7221b5334c43a1f6c8fcc5b7124, type: 2}
   m_animators:
   - {fileID: 6028441118848998262}
   - {fileID: 6983883930544293653}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_weapon: {fileID: 114318084756398594}
-  m_definition: {fileID: 11400000, guid: ab6ea29fa264f7443840642af77c55d6, type: 2}
+  m_definition: {fileID: 11400000, guid: 59582388901fd5c4eb72c7f6b997eb71, type: 2}
 --- !u!114 &4886148355340816765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1437,14 +1437,18 @@ MonoBehaviour:
     Damping: 100
     MaxDelta: 20000
   m_attachHip:
-    ForceBone: 55
+    OverrideAttach: 0
+    OverrideBone: 55
+    OverrideBoneAnimate: 0
     LookForwardOffset: {x: 0, y: 0, z: 0}
     LookUpOffset: {x: 0, y: 0, z: 0}
     LookDownOffset: {x: 0, y: 0, z: 0}
     MaxLookUpAngle: -75
     MaxLookDownAngle: 70
   m_attachAim:
-    ForceBone: 55
+    OverrideAttach: 0
+    OverrideBone: 55
+    OverrideBoneAnimate: 0
     LookForwardOffset: {x: 0.1, y: -0.15, z: 0.2}
     LookUpOffset: {x: 0, y: 0.1, z: 0.16}
     LookDownOffset: {x: 0.08, y: -0.49, z: 0.01}

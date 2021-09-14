@@ -10,29 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ad48868c50a58b43b6914a2b2a83097, type: 3}
-  m_Name: SuperSoakerAmmoRecipe
+  m_Name: FlamethrowerScrapRecipe
   m_EditorClassIdentifier: 
   m_assetId:
-    Value0: 718626259
-    Value1: 1242078382
-    Value2: 896794790
-    Value3: 541050148
+    Value0: 3953598198
+    Value1: 1098370270
+    Value2: 3518384039
+    Value3: 741382712
   Inputs:
-  - Item: {fileID: 11400000, guid: d1c5ccba9f65302408be2e46975020e7, type: 2}
-    Amount: 5
+  - Item: {fileID: 11400000, guid: 9910d03ad36776845adfeaf491b02819, type: 2}
+    Amount: 1
     Stats:
       m_set:
         m_properties: []
   Output:
-    Item: {fileID: 11400000, guid: 080ca7c7c5ae4ea49a8b38fff4cc02c0, type: 2}
-    Amount: 100
+    Item: {fileID: 11400000, guid: ca8ecba733454c8439fdc1c068756eb2, type: 2}
+    Amount: 2
     Stats:
       m_set:
         m_properties: []
-  Icon: {fileID: 21300000, guid: 6899181f549342243bd3579cfc63db66, type: 3}
+  Icon: {fileID: 21300000, guid: 45b122da2fcf70c46a834c37b88515be, type: 3}
   Order: 0
   RequiredUpgrades: []
   Categories:
-  - {fileID: 11400000, guid: 996f87ed3f8002b46a0c432dd38f5be3, type: 2}
-  - {fileID: 11400000, guid: 71518a2fb03bdef42b3c22fdf5e7a0c8, type: 2}
+  - {fileID: 11400000, guid: 2f1c9817acea07a4a8a180256aab5dbc, type: 2}
   ProductionTime: 5

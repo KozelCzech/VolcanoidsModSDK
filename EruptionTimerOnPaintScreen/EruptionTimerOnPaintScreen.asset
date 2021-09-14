@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1547716898401745591
+--- !u!114 &-1764118176297234117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutoLoad: 1
   Data:
-  - {fileID: 102900000, guid: 864891715c5c6e74b92b39f47e23a91c, type: 3}
+  - {fileID: 102900000, guid: 96300b717ba04014b83a15d2aa8af93c, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25,13 +25,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ce4e29b865b3fd47879e73172d49cd5, type: 3}
-  m_Name: SuperSoaker-9000
+  m_Name: EruptionTimerOnPaintScreen
   m_EditorClassIdentifier: 
-  WorkshopItemId: 2599147595
-  DeployDir: KozelCzech.SuperSoaker-9000
-  UploadTimestamp: 1631557413720
-  UniqueModId: KozelCzech.SuperSoaker-9000
-  Title: SuperSoaker-9000
+  WorkshopItemId: 0
+  DeployDir: 
+  UploadTimestamp: 0
+  UniqueModId: KozelCzech.EruptionTimerOnPaintScreen
+  Title: EruptionTimerOnPaintScreen
   Thumbnail: {fileID: 0}
   LoadGroup: 0
   LoadOrder: 0
@@ -39,10 +39,9 @@ MonoBehaviour:
   ChangeNote: First version
   SkipContentPatches: 0
   DebugBuild: 0
-  AssemblyDefinitions:
-  - {fileID: 5897886265953266890, guid: e8a2b0aed53ff11468e74f6b38274f5f, type: 3}
+  AssemblyDefinitions: []
   Assemblies: []
   OtherFiles: []
   Bundles:
-  - {fileID: -1547716898401745591}
+  - {fileID: -1764118176297234117}
   Metadata: []

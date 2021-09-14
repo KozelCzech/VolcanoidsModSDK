@@ -49,4 +49,5 @@ MonoBehaviour:
   RequiredUpgrades: []
   Categories:
   - {fileID: 11400000, guid: 71518a2fb03bdef42b3c22fdf5e7a0c8, type: 2}
+  - {fileID: 11400000, guid: 996f87ed3f8002b46a0c432dd38f5be3, type: 2}
   ProductionTime: 30

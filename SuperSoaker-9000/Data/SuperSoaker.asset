@@ -27,11 +27,11 @@ MonoBehaviour:
     m_comment: Item description - SuperSoaker
   Category: {fileID: 11400000, guid: 6f14ac7335e923a45a4fdd3b73c06b5d, type: 2}
   Prefabs: []
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: e82d5972341fc9e4ab5c2d86ea553c1c, type: 3}
   MaxStack: 1
   HelpPageId: 
   Stats:
     m_properties: []
   GroupIndex: 1
   GroupOrder: 0
-  Prefab: {fileID: 114318084756398594, guid: 681e7978b8c453244ac9755379cf2a29, type: 3}
+  Prefab: {fileID: 114318084756398594, guid: a4e25120116a02147b520c5aa56311df, type: 3}

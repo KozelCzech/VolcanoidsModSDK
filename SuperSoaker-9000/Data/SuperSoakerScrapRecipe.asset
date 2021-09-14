@@ -10,27 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ad48868c50a58b43b6914a2b2a83097, type: 3}
-  m_Name: SuperSoakerRecipe
+  m_Name: SuperSoakerScrapRecipe
   m_EditorClassIdentifier: 
   m_assetId:
-    Value0: 1797153753
-    Value1: 1239871600
-    Value2: 1525547447
-    Value3: 2189020129
+    Value0: 261165306
+    Value1: 1083074553
+    Value2: 779680915
+    Value3: 1636896493
   Inputs:
-  - Item: {fileID: 11400000, guid: 8df9c647d90ecaa4e9539cdeb5e3683c, type: 2}
-    Amount: 3
-    Stats:
-      m_set:
-        m_properties: []
-  - Item: {fileID: 11400000, guid: ddf109b40b214a640967e3085841d22d, type: 2}
-    Amount: 2
+  - Item: {fileID: 11400000, guid: 89cca7b6cdb8b994cb59a1eb74d9b5a2, type: 2}
+    Amount: 1
     Stats:
       m_set:
         m_properties: []
   Output:
-    Item: {fileID: 11400000, guid: 89cca7b6cdb8b994cb59a1eb74d9b5a2, type: 2}
-    Amount: 1
+    Item: {fileID: 11400000, guid: 8df9c647d90ecaa4e9539cdeb5e3683c, type: 2}
+    Amount: 2
     Stats:
       m_set:
         m_properties: []
@@ -38,6 +33,5 @@ MonoBehaviour:
   Order: 0
   RequiredUpgrades: []
   Categories:
-  - {fileID: 11400000, guid: 996f87ed3f8002b46a0c432dd38f5be3, type: 2}
-  - {fileID: 11400000, guid: 71518a2fb03bdef42b3c22fdf5e7a0c8, type: 2}
+  - {fileID: 11400000, guid: 2f1c9817acea07a4a8a180256aab5dbc, type: 2}
   ProductionTime: 5

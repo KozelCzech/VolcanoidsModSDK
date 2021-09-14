@@ -10,34 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ad48868c50a58b43b6914a2b2a83097, type: 3}
-  m_Name: Flamethrower Ammo Recipe
+  m_Name: FlamethrowerAmmoScrapRecipe
   m_EditorClassIdentifier: 
   m_assetId:
-    Value0: 1703304847
-    Value1: 1195912401
-    Value2: 3377707920
-    Value3: 1971948582
+    Value0: 2525343632
+    Value1: 1209226816
+    Value2: 1655070346
+    Value3: 1190869746
   Inputs:
-  - Item: {fileID: 11400000, guid: 156562c6e6475dd4eb885291a4662a6f, type: 2}
-    Amount: 2
-    Stats:
-      m_set:
-        m_properties: []
-  - Item: {fileID: 11400000, guid: d328101fb2c64b44fbb0e2748a64a037, type: 2}
-    Amount: 3
+  - Item: {fileID: 11400000, guid: 2d1cc9f1c0ca7fc40ad4cdaeff0ac822, type: 2}
+    Amount: 50
     Stats:
       m_set:
         m_properties: []
   Output:
-    Item: {fileID: 11400000, guid: 2d1cc9f1c0ca7fc40ad4cdaeff0ac822, type: 2}
-    Amount: 150
+    Item: {fileID: 11400000, guid: d328101fb2c64b44fbb0e2748a64a037, type: 2}
+    Amount: 2
     Stats:
       m_set:
         m_properties: []
   Icon: {fileID: 21300000, guid: 75ae0384d904dcd4e918fa2e39af260e, type: 3}
-  Order: 1
+  Order: 0
   RequiredUpgrades: []
   Categories:
-  - {fileID: 11400000, guid: 996f87ed3f8002b46a0c432dd38f5be3, type: 2}
-  - {fileID: 11400000, guid: 5acdd6b437b97fc419656d27d9b088d3, type: 2}
+  - {fileID: 11400000, guid: 2f1c9817acea07a4a8a180256aab5dbc, type: 2}
   ProductionTime: 5

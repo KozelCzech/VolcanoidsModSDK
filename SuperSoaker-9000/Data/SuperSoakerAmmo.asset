@@ -27,7 +27,7 @@ MonoBehaviour:
     m_comment: Item description - RevolverAmmo
   Category: {fileID: 11400000, guid: 2e709134fa556f646a13d9c36077569b, type: 2}
   Prefabs: []
-  Icon: {fileID: 21300000, guid: 98a5041b7c853f542bebfaebb3fbcbcd, type: 3}
+  Icon: {fileID: 21300000, guid: 6899181f549342243bd3579cfc63db66, type: 3}
   MaxStack: 500
   HelpPageId: '!Ammo#RevolverAmmo'
   Stats:
