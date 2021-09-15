@@ -6,14 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class InsideShelterCollider : MonoBehaviour
 {
-    public bool isSafe;
+    
     public GameObject child;
 
     [SerializeField]
     private GameObject player;
-    [SerializeField]
-    private CapsuleCollider playerCollider;
 
+    
     
     void Update()
     {
@@ -21,16 +20,11 @@ public class InsideShelterCollider : MonoBehaviour
         {
             var script = GameObject.FindObjectOfType<Player>();
             player = script.gameObject;
-            playerCollider = player.GetComponentInChildren<CapsuleCollider>();
+            
         }
-        if(isSafe)
-        {
-            child.SetActive(true);
-        }
-        else
-        {
-            child.SetActive(false);
-        }
+        
+        child.SetActive(Player.Local != null && IsInSafeZone(Player.Local.transform.position));
+        
     }
     private bool IsInSafeZone(Vector3 position)
     {
@@ -38,12 +32,12 @@ public class InsideShelterCollider : MonoBehaviour
         {
             if (zone.IsSafe(position))
             {
-                isSafe = true;
+                
                 return true;
                 
             }
         }
-        isSafe = false;
+        
         return false;
     }
     //private void OnTriggerEnter(Collider other)

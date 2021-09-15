@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorkshopItemId: 2601987984
   DeployDir: KozelCzech.ShelterIndication
-  UploadTimestamp: 1631639005891
+  UploadTimestamp: 1631697323143
   UniqueModId: KozelCzech.ShelterIndication
   Title: ShelterIndication
   Thumbnail: {fileID: 0}
