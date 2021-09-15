@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce4e29b865b3fd47879e73172d49cd5, type: 3}
   m_Name: ShelterIndication
   m_EditorClassIdentifier: 
-  WorkshopItemId: 0
-  DeployDir: 
-  UploadTimestamp: 0
+  WorkshopItemId: 2601987984
+  DeployDir: KozelCzech.ShelterIndication
+  UploadTimestamp: 1631639005891
   UniqueModId: KozelCzech.ShelterIndication
   Title: ShelterIndication
   Thumbnail: {fileID: 0}
@@ -24,7 +24,8 @@ MonoBehaviour:
   ChangeNote: First version
   SkipContentPatches: 0
   DebugBuild: 0
-  AssemblyDefinitions: []
+  AssemblyDefinitions:
+  - {fileID: 5897886265953266890, guid: 8b812bf26e26d254f93d3d4f603a9ab7, type: 3}
   Assemblies: []
   OtherFiles: []
   Bundles:

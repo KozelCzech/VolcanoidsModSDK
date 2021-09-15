@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorkshopItemId: 2592184768
   DeployDir: Medoj.FlamethrowerWeapon
-  UploadTimestamp: 1631612094031
+  UploadTimestamp: 1631623469050
   UniqueModId: Medoj.FlamethrowerWeapon
   Title: FlamethrowerWeapon
   Thumbnail: {fileID: 0}

@@ -29,7 +29,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorkshopItemId: 2586306620
   DeployDir: KozelCzech.ItemPickUpNotification
-  UploadTimestamp: 1630392130074
+  UploadTimestamp: 1631687169676
   UniqueModId: KozelCzech.ItemPickUpNotification
   Title: ItemPickUpNotification
   Thumbnail: {fileID: 0}
