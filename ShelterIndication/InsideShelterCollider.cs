@@ -32,18 +32,32 @@ public class InsideShelterCollider : MonoBehaviour
             child.SetActive(false);
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private bool IsInSafeZone(Vector3 position)
     {
-        if (other.gameObject.name == "ShelterCollider")
+        foreach (var zone in BlastWaveSafeZone.Instances)
         {
-            isSafe = true;
+            if (zone.IsSafe(position))
+            {
+                isSafe = true;
+                return true;
+                
+            }
         }
+        isSafe = false;
+        return false;
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.name == "ShelterCollider")
-        {
-            isSafe = false;
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.name == "ShelterCollider")
+    //    {
+    //        isSafe = true;
+    //    }
+    //}
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (other.gameObject.name == "ShelterCollider")
+    //    {
+    //        isSafe = false;
+    //    }
+    //}
 }
