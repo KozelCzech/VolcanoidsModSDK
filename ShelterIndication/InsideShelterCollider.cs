@@ -9,19 +9,11 @@ public class InsideShelterCollider : MonoBehaviour
     
     public GameObject child;
 
-    [SerializeField]
-    private GameObject player;
-
-    
+   
     
     void Update()
     {
-        if(player == null)
-        {
-            var script = GameObject.FindObjectOfType<Player>();
-            player = script.gameObject;
-            
-        }
+        
         
         child.SetActive(Player.Local != null && IsInSafeZone(Player.Local.transform.position));
         
@@ -40,18 +32,5 @@ public class InsideShelterCollider : MonoBehaviour
         
         return false;
     }
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.name == "ShelterCollider")
-    //    {
-    //        isSafe = true;
-    //    }
-    //}
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject.name == "ShelterCollider")
-    //    {
-    //        isSafe = false;
-    //    }
-    //}
+    
 }

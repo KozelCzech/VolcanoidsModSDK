@@ -27,9 +27,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce4e29b865b3fd47879e73172d49cd5, type: 3}
   m_Name: EruptionTimerOnPaintScreen
   m_EditorClassIdentifier: 
-  WorkshopItemId: 0
-  DeployDir: 
-  UploadTimestamp: 0
+  WorkshopItemId: 2602805219
+  DeployDir: KozelCzech.EruptionTimerOnPaintScreen
+  UploadTimestamp: 1631816865043
   UniqueModId: KozelCzech.EruptionTimerOnPaintScreen
   Title: EruptionTimerOnPaintScreen
   Thumbnail: {fileID: 0}
@@ -39,7 +39,8 @@ MonoBehaviour:
   ChangeNote: First version
   SkipContentPatches: 0
   DebugBuild: 0
-  AssemblyDefinitions: []
+  AssemblyDefinitions:
+  - {fileID: 5897886265953266890, guid: cae5e99bba8272e48a05e54fb38fe2ce, type: 3}
   Assemblies: []
   OtherFiles: []
   Bundles:
